@@ -50,12 +50,12 @@
     }
 
     .nav {
-      border-bottom: 1px solid var(--line);
-      background: rgba(5,5,5,0.84);
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+  background: rgba(255,255,255,0.96);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(10px);
     }
 
     .nav-inner {
@@ -81,7 +81,7 @@
 
     .brand-text {
       font-size: 0.95rem;
-      color: var(--muted);
+      color: #333;
       letter-spacing: 0.03em;
       white-space: nowrap;
     }
@@ -90,7 +90,7 @@
       display: flex;
       gap: 24px;
       align-items: center;
-      color: var(--muted);
+      color: #222;
       font-size: 0.95rem;
     }
 
@@ -386,9 +386,10 @@
 
     .footer {
       padding: 28px 0 42px;
-      color: #9f9f9f;
+      color: #222;
       font-size: 0.92rem;
-      border-top: 1px solid var(--line);
+      border-top: 1px solid rgba(0,0,0,0.08);
+      background: #ffffff;
     }
 
     .footer-inner {
@@ -474,7 +475,19 @@
       .brand img {
         height: 36px;
       }
+      .aboutus-image-wrap {
+        margin-top: 28px;
+        border-radius: 28px;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        background: rgba(255,255,255,0.03);
+      }
 
+.aboutus-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
       .hero-art {
         width: 92vw;
         right: -120px;
@@ -659,6 +672,9 @@
         </div>
         <a class="btn btn-primary" href="mailto:tom@clin-sight.com">Start the conversation</a>
       </div>
+        <div class="aboutus-image-wrap">
+      <img src="aboutus.png" alt="About us" class="aboutus-image" />
+    </div>
     </div>
   </section>
 
